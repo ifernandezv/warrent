@@ -1,0 +1,20 @@
+{
+	"Long_Text":{
+		"Style_1":"style1",
+		"Style_2":"style5",
+		"Style_3":"style13"
+	},
+	"Medium_Text":{
+		"Style_4":"style2",
+		"Style_5":"style4",
+		"Style_6":"style6",
+		"Style_7":"style7",
+		"Style_8":"style10",
+		"Style_9":"style14"
+	},
+	"Short_Description":{
+		"Style_10":"style9",
+		"Style_11":"style11",
+		"Style_12":"style15"
+	}
+}

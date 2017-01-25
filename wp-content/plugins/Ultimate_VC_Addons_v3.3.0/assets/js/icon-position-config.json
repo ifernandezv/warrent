@@ -1,0 +1,18 @@
+{
+	"Display Text and Icon - Always":{
+		"Icon_at_Left":"ubtn-sep-icon-at-left",
+		"Icon_at_Right":"ubtn-sep-icon-at-right"
+	},
+	"Display Icon With Text - On_Hover":{
+		"Bring_in_Icon_from_Left":"ubtn-sep-icon-left",
+		"Bring_in_Icon_from_Right":"ubtn-sep-icon-right",
+		"Push_Icon_to_Left":"ubtn-sep-icon-left-rev",
+		"Push_Icon_to_Right":"ubtn-sep-icon-right-rev"
+	},
+	"Replace Text by Icon - On Hover":{
+		"Push_out_Text_to_Top":"ubtn-sep-icon-bottom-push",
+		"Push_out_Text_to_Bottom":"ubtn-sep-icon-top-push",
+		"Push_out_Text_to_Left":"ubtn-sep-icon-right-push",
+		"Push_out_Text_to_Right‏":"ubtn-sep-icon-left-push"
+	}
+}
