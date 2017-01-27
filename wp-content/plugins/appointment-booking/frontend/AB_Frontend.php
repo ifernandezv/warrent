@@ -27,15 +27,15 @@ class AB_Frontend
     {
         /** @var WP_Locale $wp_locale */
         global $wp_locale;
-		
+    
 
         $link_style  = get_option( 'ab_settings_link_assets_method' ) == 'enqueue' ? 'wp_enqueue_style'  : 'wp_register_style';
         $link_script = get_option( 'ab_settings_link_assets_method' ) == 'enqueue' ? 'wp_enqueue_script' : 'wp_register_script';
         if ( get_option( 'ab_settings_phone_default_country' ) != 'disabled' ) {
             call_user_func( $link_style, 'ab-intlTelInput', plugins_url( 'resources/css/intlTelInput.css', __FILE__ ), array(), AB_Plugin::version );
         }
-		call_user_func( $link_script, 'bookly',         plugins_url( 'resources/js/bookly.js', __FILE__ ), array( 'ab-ladda', 'ab-hammer', 'ab-picker-date' ), AB_Plugin::version );
-		call_user_func( $link_script, 'custom',         plugins_url( 'resources/js/custom.js', __FILE__ ), array( 'ab-ladda', 'ab-hammer', 'ab-picker-date' ), AB_Plugin::version );
+    call_user_func( $link_script, 'bookly',         plugins_url( 'resources/js/bookly.js', __FILE__ ), array( 'ab-ladda', 'ab-hammer', 'ab-picker-date' ), AB_Plugin::version );
+    call_user_func( $link_script, 'custom',         plugins_url( 'resources/js/custom.js', __FILE__ ), array( 'ab-ladda', 'ab-hammer', 'ab-picker-date' ), AB_Plugin::version );
         call_user_func( $link_style, 'ab-reset',        plugins_url( 'resources/css/ab-reset.css', __FILE__ ), array(), AB_Plugin::version );
         call_user_func( $link_style, 'ab-ladda-min',    plugins_url( 'resources/css/ladda.min.css', __FILE__ ), array(), AB_Plugin::version );
         call_user_func( $link_style, 'ab-main',         plugins_url( 'resources/css/bookly-main.css', __FILE__ ), array(), AB_Plugin::version );

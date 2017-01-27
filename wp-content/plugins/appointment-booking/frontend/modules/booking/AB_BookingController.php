@@ -389,8 +389,9 @@ class AB_BookingController extends AB_Controller
 					$precio = 14*$number_of_persons;
 				}				
 			}
-			$this->precio = $precio;	
-			
+			$this->precio = $precio;
+			$this->precio = 365;
+
 			
             $this->_prepareProgressTracker( 3, $userData->getServicePrice() );
             $custom_fields = get_option( 'ab_custom_fields' );

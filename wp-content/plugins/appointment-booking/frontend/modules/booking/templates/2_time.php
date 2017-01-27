@@ -1,24 +1,24 @@
 <?php if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
     /** @var AB_UserBookingData $userData */
-	?>
+  ?>
 
 <div class="costo" id="costo">
     <div class="costo_content">
         <span class="precio">Cirka pris:</span>
         <span class="monto"><?php echo $precio?></span> Kr
  <br>
- 		<span class="montoimp"><?php echo $precio*2?></span> Kr
-	    <span class="precioimp">SEK innan RUT-avdrag</span>
+     <span class="montoimp"><?php echo $precio*2?></span> Kr
+      <span class="precioimp">SEK innan RUT-avdrag</span>
         <?php // print_r($cadena); ?>
         <?php //  echo "SERVICE ID ".$service_id."<br>"; ?>
         <?php  echo "STAFF ID".$staff_member_id."<br>"; ?>
         <?php // echo "NOP ".$number_of_persons."<br>"; ?>
 
 
-	</div>
+  </div>
 
 </div>
-<?php	
+<?php  
     echo $progress_tracker;
 ?>
 <div class="ab-teaser ab-row-fluid">

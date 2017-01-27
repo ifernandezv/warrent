@@ -1,19 +1,19 @@
 <?php if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
     /** @var AB_UserBookingData $userData */
-	?>
+  ?>
 
 <div class="costo" id="costo">
     <div class="costo_content">
         <span class="precio">Cirka pris:</span>
         <span class="monto"><?php echo $precio?></span> Kr
  <br>
- 		<span class="montoimp"><?php echo $precio*2?></span> Kr
-	    <span class="precioimp">SEK innan RUT-avdrag</span>
+     <span class="montoimp"><?php echo $precio*2?></span> Kr
+      <span class="precioimp">SEK innan RUT-avdrag</span>
         
-	</div>
+  </div>
 
 </div>
-<?php	
+<?php  
     echo $progress_tracker;
 ?>
 
@@ -103,14 +103,14 @@
 </div>
 <script >
  jQuery(document).ready(function (){
-           	jQuery('#Postnummer').keyup(function (){
+             jQuery('#Postnummer').keyup(function (){
             this.value = (this.value + '').replace(/[^0-9]/g, '');
-        	var limit   = 5; // Límite del textarea
-        	var value   = jQuery(this).val();             // Valor actual del textarea
-        	var current = value.length;              // Número de caracteres actual
-        	if (limit < current) {                   // Más del límite de caracteres?
+          var limit   = 5; // Límite del textarea
+          var value   = jQuery(this).val();             // Valor actual del textarea
+          var current = value.length;              // Número de caracteres actual
+          if (limit < current) {                   // Más del límite de caracteres?
              jQuery(this).val(value.substring(0, limit));
-         	}
+           }
      }); 
 });  
 
